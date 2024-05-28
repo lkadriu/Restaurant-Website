@@ -1,0 +1,157 @@
+h1, .navbar-brand {
+    font-family: 'Lobster', cursive;
+}
+
+.navbar-brand {
+    height: 40px !important;
+    width: auto !important;
+    color: white !important; /* Ngjyra e tekstit të brand-it */
+}
+
+.welcome-text {
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 100px; /* Shto hapësirë nga navbar */
+}
+
+.slider-container {
+    margin-top: 30px;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-item img {
+    max-width: 800px; /* Zvogëlo gjeresinë e fotove në përputhje me dimensionet e prindit */
+    max-height: 400px; /* Ose madhësi e caktuar sipas preferencave tuaja për lartësinë */
+    width: auto;
+    margin: 0 auto; /* Vendos fotot në qendër */
+}
+
+.carousel-indicators {
+    bottom: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.carousel-indicators li {
+    width: 10px; /* Gjeresia e shenjës */
+    height: 10px; /* Lartësia e shenjës */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5); /* Ngjyra e shenjës */
+    border: none;
+    display: inline-block;
+    margin: 0 5px; /* Hapësirë midis shenjave */
+}
+
+.carousel-indicators .active {
+    background-color: white; /* Ngjyra e shenjës aktive */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%; /* Vendos shigjetat në mes vertikalisht */
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Ngjyra e sfondit të shigjetave */
+}
+
+.carousel-control-prev {
+    left: 0; /* Vendos shigjetën e mëparshme në të majtë */
+}
+
+.carousel-control-next {
+    right: 0; /* Vendos shigjetën e ardhshme në të djathtë */
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px; /* Mund ta ndryshosh këtë vlerë sipas nevojave tua */
+    margin: 20px auto; /* Opsionale: për të shtuar hapësirë sipër dhe poshtë */
+}
+
+.map {
+    border: 0;
+    width: 100%;
+    max-width: 800px; /* Mund ta ndryshosh këtë vlerë sipas nevojave tua */
+    height: 100%;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-captions {
+    text-align: center;
+    margin-top: 10px; /* Distance from the images */
+}
+
+.carousel-caption-text {
+    display: none;
+    font-size: 18px;
+    color: #fcf7f7; /* Tekst ngjyra */
+}
+
+.carousel-caption-text.active {
+    display: block;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption-text {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+
+.carousel-caption-text.active {
+    display: block;
+}
+
+/* CSS për galerinë dhe video */
+.gallery .img-fluid {
+    margin-bottom: 15px;
+}
+
+.gallery video {
+    max-width: 100%;
+    height: auto;
+}
+.gallery h2 {
+    font-size: 24px; /* Madhësia e tekstit */
+    margin-top: 30px;
+}
+
+.gallery h2 a {
+    color: #000; /* Ngjyra e tekstit */
+    text-decoration: none; /* Hiq linjat nën tekst */
+}
+
+.gallery h2 a:hover {
+    color: #ff6347; /* Ngjyra e tekstit kur kaloni mbi të */
+}
+
+.gallery h2 a i {
+    margin-right: 5px; /* Hapësira midis ikonës dhe tekstit */
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
