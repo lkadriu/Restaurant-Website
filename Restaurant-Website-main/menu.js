@@ -1,4 +1,4 @@
-// scripts.js
+// Menu ne js
 
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('nav ul li a');
