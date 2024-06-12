@@ -30,13 +30,13 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
+                    <a class="nav-link" href="Restaurant-Website-main/About.html">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#menu">Restaurant Menu</a>
+                    <a class="nav-link" href="Restaurant-Website-main/Menu.html">Restaurant Menu</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -119,6 +119,20 @@
         </div>
     </section>
 
+    <section class="pixi-section mt-5">
+        <div class="container text-center">
+            <h2>PixiJS Interactive Animation</h2>
+            <div id="pixi-animation"></div>
+        </div>
+    </section>
+
+    <section class="pixi-filter mt-5">
+        <div class="container text-center">
+            <h2>PixiJS Filter Effect</h2>
+            <div id="pixi-filter"></div>
+        </div>
+    </section>
+
     <footer class="mt-5">
         <div class="container text-center">
             <p>&copy; 2024 Golden Plate. All rights reserved.</p>
@@ -131,7 +145,39 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <!-- Lightbox JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- PixiJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.0.0/pixi.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="scripts.js"></script>
+
+    <!-- PixiJS Interactive Animation -->
+    <script>
+        let app = new PIXI.Application({ width: 800, height: 600 });
+        document.getElementById('pixi-animation').appendChild(app.view);
+
+        let bunny = PIXI.Sprite.from('https://pixijs.io/examples/examples/assets/bunny.png');
+        bunny.anchor.set(0.5);
+        bunny.x = app.screen.width / 2;
+        bunny.y = app.screen.height / 2;
+
+        app.stage.addChild(bunny);
+
+        app.ticker.add(() => {
+            bunny.rotation += 0.1;
+        });
+    </script>
+
+    <!-- PixiJS Filter Effect -->
+    <script>
+        let appFilter = new PIXI.Application({ width: 800, height: 600 });
+        document.getElementById('pixi-filter').appendChild(appFilter.view);
+
+        let image = PIXI.Sprite.from('https://pixijs.io/examples/examples/assets/bg_rotate.jpg');
+        appFilter.stage.addChild(image);
+
+        let blurFilter = new PIXI.filters.BlurFilter();
+        blurFilter.blur = 5;
+        image.filters = [blurFilter];
+    </script>
 </body>
 </html>

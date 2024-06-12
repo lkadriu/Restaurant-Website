@@ -70,20 +70,17 @@ h1, .navbar-brand {
 }
 
 .map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 500px; /* Adjust height as needed */
-    margin: 20px auto; /* Optional: add space above and below */
+    height: 100vh; /* Bën që harta të zërë të gjithë lartësinë e viewport-it */
 }
 
 .map {
-    border: 0;
     width: 100%;
-    max-width: 800px; /* Adjust width as needed */
     height: 100%;
 }
+
+
+
 
 .carousel-item {
     position: relative;
