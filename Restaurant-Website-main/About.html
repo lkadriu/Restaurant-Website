@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>About Us</title>
-        <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="about.css">
         <style>
             .video-section video {
@@ -12,31 +13,40 @@
         </style>
     </head>
     <body>
-    <div class="wrapper">
-        <div class="row">
-            <div class="video-section">
-               <video controls autoplay loop >
-                <source src="About-Restaurant.mp4">
-                <source src="About-Restaurant.WebM">
-                <source src="About-Restaurant.Ogg">
-                This browser does not support HTML5 audio
-                </video>
-
-            </div>
-            <div class="content">
-                <h1>About Us</h1>
-                <h2>Our Restaurant</h2>
-                <p>
-                    Welcome to our Restaurant, a culinary sanctuary where every meal is a celebration of flavors and artistry.
-                    Nestled in the heart of the city, our restaurant offers an exquisite dining experience, blending modern elegance with a warm and inviting atmosphere.
-                    Our chefs craft each dish with passion, using the finest ingredients to create a symphony of tastes that delight the senses.
-                    Whether you're savoring our signature dishes or exploring seasonal specials, every bite is a journey through culinary excellence.
-                    Perfect for intimate dinners, family gatherings, or special celebrations, our Restaurant promises an unforgettable experience where exceptional
-                    food and impeccable service come together in perfect harmony.
-                    Join us and indulge in a dining adventure that is as memorable as it is delicious!
-                </p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#restaurant-menu">Restaurant Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <div class="row">
+                <div class="video-section">
+                    <video controls autoplay loop>
+                        <source src="About-Restaurant.mp4" type="video/mp4">
+                        <source src="About-Restaurant.webm" type="video/webm">
+                        <source src="About-Restaurant.ogg" type="video/ogg">
+                        This browser does not support HTML5 video.
+                    </video>
+                </div>
+                <div class="content">
+                    <h1>About Us</h1>
+                    <h2>Our Restaurant</h2>
+                    <p>
+                        Welcome to our Restaurant, a culinary sanctuary where every meal is a celebration of flavors and artistry.
+                        Nestled in the heart of the city, our restaurant offers an exquisite dining experience, blending modern elegance with a warm and inviting atmosphere.
+                        Our chefs craft each dish with passion, using the finest ingredients to create a symphony of tastes that delight the senses.
+                        Whether you're savoring our signature dishes or exploring seasonal specials, every bite is a journey through culinary excellence.
+                        Perfect for intimate dinners, family gatherings, or special celebrations, our Restaurant promises an unforgettable experience where exceptional
+                        food and impeccable service come together in perfect harmony.
+                        Join us and indulge in a dining adventure that is as memorable as it is delicious!
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
     </body>
 </html>
+
